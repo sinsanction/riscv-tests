@@ -1,0 +1,14 @@
+#=======================================================================
+# Makefrag for rv64vecex tests
+#-----------------------------------------------------------------------
+
+rv64vecex_sc_tests = \
+	maskLogicalInsts \
+	vill \
+    eew \
+
+
+
+rv64vecex_p_tests = $(addprefix rv64vecex-p-, $(rv64vecex_sc_tests))
+
+spike_tests += $(rv64vecex_p_tests)

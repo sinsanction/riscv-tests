@@ -20,6 +20,7 @@ include $(src_dir)/rv64uf/Makefrag
 include $(src_dir)/rv64ud/Makefrag
 include $(src_dir)/rv64si/Makefrag
 include $(src_dir)/rv64mi/Makefrag
+include $(src_dir)/rv64vecex/Makefrag
 endif
 include $(src_dir)/rv32ui/Makefrag
 include $(src_dir)/rv32uc/Makefrag
@@ -88,7 +89,7 @@ tests += $$($(1)_tests)
 endef
 
 
-SUITES = rv64mi rv64si rv64ua rv64ui rv64um rv64uc rv64uf rv64ud
+SUITES = rv64mi rv64si rv64ua rv64ui rv64um rv64uc rv64uf rv64ud rv64vecex
 
 $(foreach s, $(SUITES), $(eval $(call compile_template,$(s),-march=rv64g -mabi=lp64)) )
 
