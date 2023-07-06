@@ -6,6 +6,8 @@ rv64vecex_sc_tests = \
 	maskLogicalInsts \
 	vill \
     eew \
+    emul \
+    regNumNotAlign \
 
 
 
