@@ -18,11 +18,10 @@ RVTEST_CODE_BEGIN
 
   li TESTNUM, 2
 
-# doubleFpInst
+#(1)fpEewIllegal
   li t0, -1
 # vsetvli t1, t0, e8, m1
   .word 0x2f357
-
 bad1:
 # vfwcvt.f.x.v v2, v0
 # 010010 1 00000 01011001 00010 1010111
@@ -37,7 +36,7 @@ bad2:
   .word 0x4a161157
   j fail
 
-# intExt
+#(2)intExtEewIllegal
   li t0, -1
 # vsetvli t1, t0, e16, m1
   .word 0x82f357
@@ -47,7 +46,7 @@ bad3:
   .word 0x4a122157
   j fail
 
-# wideningInst / narrowingInst
+#(3)wnEewIllegal
   li t0, -1
 # vsetvli t1, t0, e64, m1
   .word 0x182f357

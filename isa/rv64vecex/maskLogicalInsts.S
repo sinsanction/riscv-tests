@@ -17,7 +17,6 @@ RVTEST_CODE_BEGIN
   .option norvc
 
   li TESTNUM, 2
-# 00 0010 0000 1010 0001 1101 0111
 # VMAND_MM b011001???????????010?????1010111
 bad1:
   .word 0x6420a1d7
