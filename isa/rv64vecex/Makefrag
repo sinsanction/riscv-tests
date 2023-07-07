@@ -8,6 +8,7 @@ rv64vecex_sc_tests = \
     eew \
     emul \
     regNumNotAlign \
+    regOverlap \
 
 
 
