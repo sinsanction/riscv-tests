@@ -26,8 +26,8 @@ RVTEST_CODE_BEGIN
   la a2, tdata
 bad1:
 # vle16.v v0, (a2)
-# 000000000000 01100 101 00000 0000111
-  .word 0x65007
+# 000000 1 00000 01100 101 00000 0000111
+  .word 0x2065007
   j fail
 
 #(2)intExtEmulIllegal
