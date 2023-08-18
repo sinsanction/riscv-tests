@@ -9,6 +9,8 @@ rv64vecex_sc_tests = \
     emul \
     regNumNotAlign \
     regOverlap \
+    vstart \
+    vstart2 \
 
 
 
