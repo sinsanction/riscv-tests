@@ -24,7 +24,7 @@ RVTEST_CODE_BEGIN
 # 000000 000000 00101 111 00110 1010111
   .word 0x2f357
 bad1:
-# vadd.vv v0, v2, v1
+# vadd.vv v0, v2, v1, vm
 # 000000 0 00010 00001 000 00000 1010111
   .word 0x208057
   j fail
